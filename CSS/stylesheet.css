@@ -23,6 +23,19 @@ header {
   color: honeydew;
   font-family: 'Trebuchet MS';
 }
+@media screen and (max-width: 600px){
+header {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+}
+
+#headshot {
+  width: 80px;
+  border: 1px inset peru;
+}
+}
 
 footer {
   background-color: gainsboro;
