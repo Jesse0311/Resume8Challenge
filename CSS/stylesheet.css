@@ -1,0 +1,212 @@
+
+/* ELEMENTS SECTION */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 140%;
+  padding: 10px;
+  border: 10px outset peru;
+  border-radius: 12px;
+  margin: 5px;
+  color: aliceblue;
+}
+
+body {
+  background: url("../image/Jesse_Background_Pic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-image: blue ;
+}
+
+header {
+  text-align: center;
+  background-color: #0c2e4f;
+  color: honeydew;
+  font-family: 'Trebuchet MS';
+}
+
+footer {
+  background-color: gainsboro;
+  text-align: center;
+  color: aliceblue;
+}
+
+/* ID SECTION */
+
+#Headshot {
+  width: 150px;
+  height: 150px;
+  padding: 8px;
+  border: 10px inset peru;
+  border-radius: 50%;
+  margin: 10px;
+  object-fit: cover;
+  object-position: 0px 0.1px;
+}
+
+#header {
+  padding: 10px;
+  border: 0px;
+  border-radius: 12px;
+  margin: 0px;
+  position: static;
+  display: flex;
+}
+
+#Profile {
+  font-size: 105%;
+  text-align: left;
+  padding-left: 80px;
+  width: 150%;
+  color: pink;
+}
+
+#DescriptionOfMe {
+  display: flex;
+  padding-top: 15px;
+  padding-left: 10px;
+  position: static;
+}
+
+#Name {
+  font-size: 150%;
+  color: aliceblue;
+}
+
+#HeaderText {
+  text-align: left;
+  width: 100%;
+  position: static;
+  line-height: 155%;
+  padding-top: 15px;
+}
+
+#Menu {
+  font-size: 150%;
+  color: white;
+}
+
+
+/* CLASS SECTION */
+.SidebarLink {
+  line-height: 200%;
+}
+
+.NavMenu {
+  display: flex;
+  height: 100%;
+}
+
+.Sidebar {
+  background-color: #7d8081;
+  width: 130px;
+  color: white;
+  padding: 15px;
+  border: 5px outset lightslategrey;
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  list-style-type: none;
+  font-family: 'Trebuchet MS';
+  position: static;
+}
+
+.main {
+  display: flex;
+  opacity: 80%;
+}
+
+.Qualifications-Section {
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;
+  border: 5px outset lightslategrey;
+  border-radius: 12px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family: sans-serif;
+  position: static;
+}
+
+.Experience-Section {
+  background-color: aliceblue;
+  color:black;
+  padding: 10px;
+  border: 5px outset lightslategrey;
+  border-radius: 12px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-family: sans-serif;
+  position: static;
+}
+
+.Skills-Section {
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;;
+  border: 5px outset lightslategrey;
+  border-radius: 12px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  font-family: sans-serif;
+  position: static;
+}
+
+.Interests-Section {
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;;
+  border: 5px outset lightslategrey;
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-family: sans-serif;
+  position: static;
+}
+
+.Icons {
+  margin: 2%;
+}
+
+.footer {
+  background-color: #0c2e4f;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 5px;
+  position: static;
+}
+
+/* LINK */
+a:link {
+  color: rgb(18, 71, 185);
+}
+
+/* Small devices (portrait laptops and large phones, 600px and down)*/
+@media screen and (max-width: 600px) {
+  div {
+    display: inline-block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and down)*/
+@media screen and (max-width: 768px) {
+  div {
+    display: inline-block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and down)*/
+@media screen and (max-width: 992px) {
+  div {
+    display: inline-block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
