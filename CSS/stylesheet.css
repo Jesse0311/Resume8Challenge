@@ -23,18 +23,10 @@ header {
   color: honeydew;
   font-family: 'Trebuchet MS';
 }
-@media screen and (max-width: 600px){
-header {
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-
-}
 
 #headshot {
   width: 80px;
   border: 1px inset peru;
-}
 }
 
 footer {
@@ -195,31 +187,84 @@ a:link {
 }
 
 /* Small devices (portrait laptops and large phones, 600px and down)*/
-@media screen and (max-width: 600px) {
-  div {
-    display: inline-block;
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 578px) {
+  #Name, #Menu, h2, h3, h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+  }
+  ul li {
+    font-size: 12px;
+  }
+  #Profile {
+    padding: 0%;
+  }
+  #Headshot {
+    height: 100px;
+    width: 100px;
+    border: 5px inset peru;
+  }
+  #HeaderText {
+    text-align: justify;
+    padding-top: 0%;
+  }
+  nav a {
+    font-size: 15px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and down)*/
-@media screen and (max-width: 768px) {
-  div {
-    display: inline-block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 578px) and (max-width: 768px) {
+  #Name, #Menu, h2, h3, h4 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+  ul li {
+    font-size: 16px;
+  }
+  #Profile {
+    padding: 2%;
+  }
+  #Headshot {
+    height: 100px;
+    width: 100px;
+    border: 7px inset peru;
+  }
+  #HeaderText {
+    text-align: justify;
+    padding-top: 5%;
+  }
+  nav a{
+    font-size: 18px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and down)*/
-@media screen and (max-width: 992px) {
-  div {
-    display: inline-block;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #Name, #Menu, h2, h3, h4 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 22px;
+  }
+  ul li {
+    font-size: 20px;
+  }
+  #Profile {
+    padding: 4%;
+  }
+  #Headshot {
+    height: 135px;
+    width: 135px;
+    border: 8.5px inset peru;
+  }
+  #HeaderText {
+    padding-top: 5%;
+  }
+  nav a {
+    font-size: 20px;
   }
 }
