@@ -2,19 +2,16 @@
 /* ELEMENTS SECTION */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 140%;
-  padding: 10px;
-  border: 10px outset peru;
-  border-radius: 12px;
-  margin: 5px;
+  font-size: 120%;
   color: aliceblue;
 }
 
-body {
-  background: url("../image/Jesse_Background_Pic.jpg");
-  background-position: center;
-  background-size: cover;
-  background-image: blue ;
+h2 {
+  font-size: 150%;
+}
+
+h3 {
+  font-size: 125%;
 }
 
 header {
@@ -36,10 +33,35 @@ footer {
 }
 
 /* ID SECTION */
+#education {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+#experience {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+#skills {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+#interests {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+#contact {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 
 #Headshot {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   padding: 8px;
   border: 10px inset peru;
   border-radius: 50%;
@@ -49,9 +71,9 @@ footer {
 }
 
 #header {
-  padding: 10px;
+  height: auto;
+  padding: 20px;
   border: 0px;
-  border-radius: 12px;
   margin: 0px;
   position: static;
   display: flex;
@@ -78,46 +100,65 @@ footer {
 }
 
 #HeaderText {
+  height: auto;
   text-align: left;
   width: 100%;
   position: static;
-  line-height: 155%;
-  padding-top: 15px;
+  line-height: auto;
+  padding-top: 50px;
+  text-align: justify;
 }
 
-#Menu {
-  font-size: 150%;
-  color: white;
+/*Grid Display CSS*/
+.Qualifications-Section {
+  grid-area: education;
 }
-
-
-/* CLASS SECTION */
+.Experience-Section {
+  grid-area: experience;
+}
+.Skills-Section {
+  grid-area: skills;
+}
+.Interests-Section {
+  grid-area: interests;
+}
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-areas: 
+    "education education"
+    "experience experience"
+    "skills interests";
+  grid-template-columns: 1fr 3fr;
 }
 
-.SidebarLink {
-  line-height: 200%;
+/* CLASS SECTION */
+.bg {
+  background: url("../image/Background_Pic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-image: blue ;
 }
 
-.NavMenu {
-  display: flex;
-  height: 100%;
+.nav-link {
+  margin-right: 20px;
 }
 
-.Sidebar {
-  background-color: #7d8081;
-  width: 130px;
-  color: white;
-  padding: 15px;
-  border: 5px outset lightslategrey;
-  border-radius: 12px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  list-style-type: none;
-  font-family: 'Trebuchet MS';
-  position: static;
+.carousel-item {
+  height: auto;
+  width: 100%;
+}
+
+.carousel-inner {
+  width: auto;
+  height: 500px;
+  display: block;
+  margin: auto;
+}
+
+.d-block {
+  object-fit: fill;
+  width: auto;
+  height: 500px;
 }
 
 .main {
@@ -131,9 +172,6 @@ footer {
   padding: 10px;
   border: 5px outset lightslategrey;
   border-radius: 12px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-top: 5px;
   font-family: sans-serif;
   position: static;
 }
@@ -144,7 +182,6 @@ footer {
   padding: 10px;
   border: 5px outset lightslategrey;
   border-radius: 12px;
-  margin-left: 5px;
   margin-top: 5px;
   font-family: sans-serif;
   position: static;
@@ -156,8 +193,7 @@ footer {
   padding: 10px;;
   border: 5px outset lightslategrey;
   border-radius: 12px;
-  margin-bottom: 0px;
-  margin-left: 5px;
+  margin-top: 5px;
   font-family: sans-serif;
   position: static;
 }
@@ -181,7 +217,6 @@ footer {
 .footer {
   background-color: #0c2e4f;
   padding: 10px;
-  border-radius: 12px;
   margin-top: 5px;
   position: static;
 }
@@ -193,8 +228,20 @@ a:link {
 
 /* Small devices (portrait laptops and large phones, 600px and down)*/
 @media screen and (max-width: 578px) {
-  #Name, #Menu, h2, h3, h4 {
+.grid-container {
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "education"
+  "experience"
+  "skills"
+  "interests";
+  }
+
+  #Name, #Menu, h2, h4 {
     font-size: 18px;
+  }
+  h3 {
+    font-size: 15px;
   }
   p {
     font-size: 12px;
@@ -214,15 +261,24 @@ a:link {
     text-align: justify;
     padding-top: 0%;
   }
-  nav a {
-    font-size: 15px;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and down)*/
 @media screen and (min-width: 578px) and (max-width: 768px) {
-  #Name, #Menu, h2, h3, h4 {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-areas: 
+      "education"
+      "experience"
+      "skills"
+      "interests";
+  }
+
+  #Name, #Menu, h2, h4 {
     font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
   }
   p {
     font-size: 16px;
@@ -242,21 +298,30 @@ a:link {
     text-align: justify;
     padding-top: 5%;
   }
-  nav a{
-    font-size: 18px;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and down)*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  #Name, #Menu, h2, h3, h4 {
-    font-size: 26px;
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      "education education"
+      "experience experience"
+      "skills interests";
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #Name, #Menu, h2, h4 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
   }
   p {
-    font-size: 22px;
+    font-size: 18px;
   }
   ul li {
-    font-size: 20px;
+    font-size: 18px;
   }
   #Profile {
     padding: 4%;
@@ -269,7 +334,18 @@ a:link {
   #HeaderText {
     padding-top: 5%;
   }
-  nav a {
-    font-size: 20px;
-  }
+}
+
+/*Animation Code*/
+@keyframes AnimationLogo {
+  0% {transform: translateY(0);}
+  25% {filter: grayscale(100%); transform: translateY(-10px)}
+  50% {filter: grayscale(100%);}
+  100% {transform: translateY(0);}
+}
+
+#AnimationLogo:hover {
+  animation-name: AnimationLogo;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
 }

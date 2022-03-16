@@ -2,145 +2,249 @@
 <html>
 
 <head>
+    <!--Bootstrap CSS Stylesheets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Javascript Bundle Plugin-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!--Required Meta tags-->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesse's Resume</title>
+
+    <!--Stylesheet CSS-->
     <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+    <title>Jesse's Resume</title>
 </head>
 
 <body>
-    <picture>
-        <source media="(max-width:650px)" srcset="image/Jesse_Head_Pic.jpg">
-        <source media="(max-width:1000px)" srcset="image/Jesse_Shoulders_Pic.jpg">
-        <img src="image/Jesse_Body_Pic.jpg" width="100%" height="100%" alt="Body image">
-    </picture>
-
-    <header id="header">
-        <div id="Profile">
-            <img id="Headshot" src="image\Jesse_Pic.jpg" alt="This is a pic of Jesse">
-            <h1 id="Name">Jesse Christians</h1>
-            <h4>Facilitator</h4>
+    <!--Sticky Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-bar"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-center navbar-collapse collapse" id="navigation-bar">
+            <ul class="navbar-nav navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#HeaderText">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Details</a>
+                </li>
+            </ul>
         </div>
-        <section id="DescriptionOfMe">
-            <p id="HeaderText">Facilitator for The Click Foundation with 3+ years experience in various working
-                environments. Ongoing improvement of coding knowledge, eager to learn and better my abilities, and
-                passionate about all things technical. Background knowledge of (MS Office, Google Workspace Apps and
-                Basic Computer Logic) how a computer works. I got my first PC in 2010, and since then I've come to
-                realise that it is something that apeals to me more than anything else. </p>
-        </section>
-    </header>
+    </nav>
 
-    <section class="main">
-        <aside>
-            <nav class="NavMenu">
-                <div class="Sidebar">
-                    <h1 id="Menu">Menu</h1>
-                    <a href="#education" class="SidebarLink">Education</a>
-                    <a href="#experience" class="SidebarLink">Experience</a>
-                    <a href="#skills" class="SidebarLink">Skills</a>
-                    <a href="#interests" class="SidebarLink">Interests</a>
-                </div>
-            </nav>
-        </aside>
-        <article>
-            <div class="grid-container">
-                <section class="Qualifications-Section">
-                    <h2 id="education">Education</h2>
-                    <h3>I learned to code at <a href="https://www.codespace.co.za/" target="_blank">CodeSpace
-                            Academy</a>.
-                        Dec 2021
-                    </h3>
-                    <p>During the month of December 2021(1st - 14th of Dec), I earned an 'Intro To Web' Certificate
-                        after an
-                        informative 2 week BootCamp with CodeSpace. In this course I learned to code in both HTML and
-                        CSS
-                        using <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> and was
-                        able
-                        to use this platform to create our my Digital Resume. I've been introduced to lots of
-                        opportunities
-                        in the Coding field during this short space, which is a great foundation.</p>
+    <div class="bg">
+        <picture>
+            <source media="(max-width:650px)" srcset="image/Jesse_Head_Pic.jpg">
+            <source media="(max-width:1000px)" srcset="image/Jesse_Shoulders_Pic.jpg">
+            <img src="image/Jesse_Body_Pic.jpg" width="100%" height="100%" alt="Body image">
+        </picture>
 
-                    <h3>I learned 2D Animation at <a href="https://www.aie.ac/" target="_blank">AIE</a>. Jan - Dec 2019
-                    </h3>
-                    <p>During the year 2019, I earned an 'Advanced 2D Animation and Illustration' certificate after an
-                        exciting 1 year course with Academic Institute of Excellence. In this course I was exposed to 2D
-                        Illustration concepts and animation techniques with the help of Adobe Photoshop and
-                        Illustration,
-                        Toon Boom's Storyboard Pro and Toon Boom's Harmony. At the end of my 1 year course I was able to
-                        create my own 2D animation using the various animation and editing platforms.</p>
-                </section>
-                <section class="Experience-Section">
-                    <h2 id="experience">Experience</h2>
-                    <h3>Data Capturer at <a href="https://marine.olsps.com/" target="_blank">OLSPS Marine</a>. Jan -
-                        April
-                        2020
-                    </h3>
-                    <ul>
-                        <li>I was required to process and extract information from a document and convert it into data
-                            readable by a computer.</li>
-                        <li>I worked under pressure as deadlines were tight, and accuracy was most important, so it was
-                            my
-                            responsibility to ensure that all data was correct and done on time.</li>
-                        <li>Any located errors in data were to be reported to administrators, and I would then have to
-                            recheck the database and sort it out.</li>
-                    </ul>
-
-                    <h3>Facilitator at <a href="https://clickfoundation.co.za/" target="_blank">The Click
-                            Foundation</a>.
-                        August 2020 - Ongoing
-                    </h3>
-                    <ul>
-                        <li>Facilitate learners learning, by monitoring their use of our Reading Eggs programmes and
-                            make
-                            sure that they are engaging with the work.</li>
-                        <li>Assist learners if they are struggling, help them to understand what they are reading or
-                            tasks
-                            they are doing.</li>
-                        <li>Ensure the computer lab is in the best condition for learners to be in. A clean and focused
-                            environment is always a good learning environment.</li>
-                        <li>Communicate with parents to encourage home learning, to boost usage and active time, in
-                            order
-                            for learners to get the most out of the programme.</li>
-                    </ul>
-                </section>
-                <section class="Skills-Section">
-                    <h2 id="skills">Skills</h2>
-                    <ul>
-                        <li>Hard working</li>
-                        <li>Attention to detail</li>
-                        <li>Artistic</li>
-                        <li>Applied computer logic</li>
-                        <li>Proactive</li>
-                    </ul>
-                </section>
-                <section class="Interests-Section">
-                    <h2 id="interests">Interests</h2>
-                    <ul>
-                        <li>I am extremely passionate about working with computers, more software than hardware although
-                            I
-                            would not say no to learn about that too.</li>
-                        <li>I've always wanted to become a graphic designer for as long as I
-                            can remember and I don't doubt my ability to reach that.</li>
-                        <li>I enjoy drawing, and because of that, I decided to do the 2D animation course to combine
-                            both my
-                            love for computers and art.</li>
-                        <li>I love sport, especially soccer.</li>
-                        <li>I enjoy being outdoors and going on hikes up Table Mountain.</li>
-                        <li>My main interest would be striving towards building a strong foundation in the IT industry.
-                        </li>
-                    </ul>
-                </section>
+        <header id="header">
+            <div id="Profile">
+                <img id="Headshot" src="image\Jesse_Pic.jpg" alt="This is a pic of Jesse">
+                <h1 id="Name">Jesse Christians</h1>
+                <h4>Facilitator</h4>
             </div>
-        </article>
-    </section>
-    <footer class="footer">
-        <h2>Contact Details</h2>
-        <a href="http://www.instagram.com/jah_blxss" target="_blank" class="Icons"><img src="image/Instagram_Pic.png"
-                alt="Instagram" width="54px" height="54px"></a>
-        <a href="https://www.linkedin.com/in/jesse-christians-631671227/" target="_blank" class="Icons"><img
-                src="image/LinkedIn_Pic.png" alt="LinkedIn" width="48px" height="48px"></a>
-        <a href="mailto:j.christians@lab.clicklearning.org" class="Icons"><img src="image/Gmail_Pic.png" alt="Gmail"
-                width="43px" height="45px"></a>
-    </footer>
+            <section id="DescriptionOfMe">
+                <p id="HeaderText">Facilitator for The Click Foundation with 3+ years experience in various working
+                    environments. Ongoing improvement of coding knowledge, eager to learn and better my abilities, and
+                    passionate about all things technical. Background knowledge of (MS Office, Google Workspace Apps and
+                    Basic Computer Logic) how a computer works. I got my first PC in 2010, and since then I've come to
+                    realise that it is something that apeals to me more than anything else. </p>
+            </section>
+        </header>
+
+        <!--Carousel Code-->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="6000">
+                    <div class="d-flex justify-content-center">
+                        <img src="image/Apex_Legends.jpg" class="d-block align-middle" alt="Apex Legends Logo">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="d-flex justify-content-center">
+                        <img src="image/Bloodhound.jpg" class="d-block align-middle" alt="Apex Legends Bloodhound">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="d-flex justify-content-center">
+                        <img src="image/Wraith.jpg" class="d-block align-middle" alt="Apex Legends Wraith">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="d-flex justify-content-center">
+                        <img src="image/Loba.jpg" class="d-block align-middle" alt="Apex Legends Loba">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="image/Octane.jpg" class="d-block align-middle" alt="Apex Legends Octane">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--The Main Sections-->
+        <section class="main">
+            <article>
+                <div class="grid-container">
+                    <section class="Qualifications-Section">
+                        <h2 id="education">Education</h2>
+                        <h3>I learned to code at <a href="https://www.codespace.co.za/" target="_blank">CodeSpace
+                                Academy</a>.
+                            Dec 2021
+                        </h3>
+                        <p>During the month of December 2021(1st - 14th of Dec), I earned an 'Intro To Web' Certificate
+                            after an
+                            informative 2 week BootCamp with CodeSpace. In this course I learned to code in both HTML
+                            and
+                            CSS
+                            using <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> and
+                            was
+                            able
+                            to use this platform to create our my Digital Resume. I've been introduced to lots of
+                            opportunities
+                            in the Coding field during this short space, which is a great foundation.</p>
+
+                        <h3>I learned 2D Animation at <a href="https://www.aie.ac/" target="_blank">AIE</a>. Jan - Dec
+                            2019
+                        </h3>
+                        <p>During the year 2019, I earned an 'Advanced 2D Animation and Illustration' certificate after
+                            an
+                            exciting 1 year course with Academic Institute of Excellence. In this course I was exposed
+                            to 2D
+                            Illustration concepts and animation techniques with the help of Adobe Photoshop and
+                            Illustration,
+                            Toon Boom's Storyboard Pro and Toon Boom's Harmony. At the end of my 1 year course I was
+                            able to
+                            create my own 2D animation using the various animation and editing platforms.</p>
+                    </section>
+                    <section class="Experience-Section">
+                        <h2 id="experience">Experience</h2>
+                        <h3>Data Capturer at <a href="https://marine.olsps.com/" target="_blank">OLSPS Marine</a>. Jan -
+                            April
+                            2020
+                        </h3>
+                        <ul>
+                            <li>I was required to process and extract information from a document and convert it into
+                                data
+                                readable by a computer.</li>
+                            <li>I worked under pressure as deadlines were tight, and accuracy was most important, so it
+                                was
+                                my
+                                responsibility to ensure that all data was correct and done on time.</li>
+                            <li>Any located errors in data were to be reported to administrators, and I would then have
+                                to
+                                recheck the database and sort it out.</li>
+                        </ul>
+
+                        <h3>Facilitator at <a href="https://clickfoundation.co.za/" target="_blank">The Click
+                                Foundation</a>.
+                            August 2020 - Ongoing
+                        </h3>
+                        <ul>
+                            <li>Facilitate learners learning, by monitoring their use of our Reading Eggs programmes and
+                                make
+                                sure that they are engaging with the work.</li>
+                            <li>Assist learners if they are struggling, help them to understand what they are reading or
+                                tasks
+                                they are doing.</li>
+                            <li>Ensure the computer lab is in the best condition for learners to be in. A clean and
+                                focused
+                                environment is always a good learning environment.</li>
+                            <li>Communicate with parents to encourage home learning, to boost usage and active time, in
+                                order
+                                for learners to get the most out of the programme.</li>
+                        </ul>
+                    </section>
+                    <section class="Skills-Section">
+                        <h2 id="skills">Skills</h2>
+                        <ul>
+                            <li>Hard working</li>
+                            <li>Attention to detail</li>
+                            <li>Artistic</li>
+                            <li>Applied computer logic</li>
+                            <li>Proactive</li>
+                        </ul>
+                    </section>
+                    <section class="Interests-Section">
+                        <h2 id="interests">Interests</h2>
+                        <ul>
+                            <li>I am extremely passionate about working with computers, more software than hardware
+                                although
+                                I
+                                would not say no to learn about that too.</li>
+                            <li>I've always wanted to become a graphic designer for as long as I
+                                can remember and I don't doubt my ability to reach that.</li>
+                            <li>I enjoy drawing, and because of that, I decided to do the 2D animation course to combine
+                                both my
+                                love for computers and art.</li>
+                            <li>I love sport, especially soccer.</li>
+                            <li>I enjoy being outdoors and going on hikes up Table Mountain.</li>
+                            <li>My main interest would be striving towards building a strong foundation in the IT
+                                industry.
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+        </section>
+
+        <footer id="contact" class="footer">
+            <h2>Contact Details</h2>
+            <a href="http://www.instagram.com/jah_blxss" target="_blank" class="Icons"><img id="AnimationLogo"
+                    src="image/Instagram_Pic.png" alt="Instagram" width="54px" height="54px"></a>
+            <a href="https://www.linkedin.com/in/jesse-christians-631671227/" target="_blank" class="Icons"><img
+                    id="AnimationLogo" src="image/LinkedIn_Pic.png" alt="LinkedIn" width="48px" height="48px"></a>
+            <a href="mailto:j.christians@lab.clicklearning.org" class="Icons"><img id="AnimationLogo"
+                    src="image/Gmail_Pic.png" alt="Gmail" width="43px" height="45px"></a>
+        </footer>
+    </div>
 </body>
 
 </html>
